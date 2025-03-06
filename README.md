@@ -1,8 +1,5 @@
 ## counting repeat sequence in Long-read data
 
-#README
-
-
 ## Short-tandem repeat genotyping using long reads ##
 https://github.com/bcgsc/straglr
 
@@ -95,13 +92,9 @@ echo "done ${ff}"
 done
 ```
 
-# after finshed, the .tsv file can be modify throug "adding_filename_and_combine_big.R" in R_script folder
-# for genotyping, can use igvtoolcount.R in conda env called "igvtool_count_auto.R"
-# enter env, activte rstudio through command, and use it
-
-
-########################################################################################################################################################
-
+## after finshed, the .tsv file can be modify throug "adding_filename_and_combine_big.R" in R_script folder
+## for genotyping, can use igvtoolcount.R in conda env called "igvtool_count_auto.R"
+## enter env, activte rstudio through command, and use it
 
 
 ######################################
@@ -157,3 +150,4 @@ perl in_silico_pcr-master/in_silico_PCR.pl -s input.fa -a ATGGGCAACCGGCGCAGCTGTG
 cat output.txt | awk 'NR>1' | awk '{total += $4} END {print total/NR/42}'
 ```
 # make for loop and cat all the result
+
